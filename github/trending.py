@@ -73,7 +73,8 @@ def analyze_with_ai(repos):
     repos_to_analyze = repos[:15]
     
     prompt = f"""
-    You are a technical editor for a "GitHub Trending Daily" newsletter.
+    You are a visionary technical editor for a "GitHub Trending Daily" newsletter.
+    Your goal is to provide developers with INSPIRATION and INSIGHTS from the latest open source trends.
     Analyze the following list of trending GitHub repositories and provide a comprehensive summary in JSON format.
     
     Repositories:
@@ -81,14 +82,15 @@ def analyze_with_ai(repos):
     
     Requirements:
     1. "summary": A high-quality, insightful paragraph (in Chinese) analyzing today's trends. 
-       - Identify themes (e.g., "AI Agents explosion", "Rust tooling maturity").
+       - Identify core themes (e.g., "AI Agents explosion", "Rust tooling maturity").
        - Highlight the most significant 2-3 projects and *why* they matter.
+       - Crucial: Explicitly mention what developers can learn or build based on these trends (Inspiration).
        - Use professional technical tone but easy to read.
     2. "stats": Calculate total_projects, average_score (out of 10, strictly based on potential impact/novelty), and language_count.
     3. "language_distribution": A mapping of Language -> list of concise tech keywords/tags derived from the projects in that language.
     4. "projects": A list of enriched project objects, same order as input. Each object must have:
        - "name": same as input
-       - "translation": Chinese translation of the description. Concise and accurate.
+       - "translation": Chinese translation of the description. Focus on the value proposition: What problem does it solve?
        - "score": A score from 1-10. Be strict. 9-10 for game changers, 7-8 for solid tools, <6 for niche/toy projects.
        - "tech_stack": A list of 3-5 key technologies/tags (e.g., "LLM", "Rust", "Web", "CLI").
        - "is_recommended": Boolean, true if score >= 8.
