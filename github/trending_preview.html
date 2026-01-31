@@ -1,0 +1,318 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background-color: #f6f8fa; }
+            .container { background: white; padding: 40px; border-radius: 8px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+            .header { margin-bottom: 30px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+            .header h1 { margin: 0; color: #24292e; font-size: 24px; }
+            .header p { color: #586069; margin: 5px 0 0 0; }
+            
+            .summary-card { background-color: #f1f8ff; border: 1px solid #c8e1ff; border-radius: 6px; padding: 20px; margin-bottom: 30px; }
+            .summary-card h2 { margin-top: 0; font-size: 18px; color: #0366d6; }
+            .stats-row { display: flex; gap: 40px; margin-top: 20px; border-top: 1px solid #c8e1ff; padding-top: 15px; }
+            .stat-item { display: flex; flex-direction: column; }
+            .stat-item strong { font-size: 20px; color: #24292e; }
+            .stat-item span { font-size: 12px; color: #586069; }
+            
+            .lang-section { margin-bottom: 30px; }
+            .lang-section h3 { font-size: 18px; border-left: 4px solid #2ea44f; padding-left: 10px; margin-bottom: 15px; }
+            .lang-section p { margin: 5px 0; font-size: 14px; color: #444; }
+            
+            .repo { border-bottom: 1px solid #eee; padding: 25px 0; }
+            .repo:last-child { border-bottom: none; }
+            .repo-header { font-size: 18px; font-weight: 600; margin-bottom: 8px; }
+            .rank { color: #6a737d; margin-right: 8px; font-weight: normal; }
+            .repo-name { color: #0366d6; text-decoration: none; }
+            .repo-desc { margin: 0 0 12px 0; color: #24292e; font-size: 15px; }
+            
+            .recommend-badge { color: #d73a49; font-weight: 600; font-size: 14px; margin-bottom: 10px; }
+            .score-text { color: #586069; font-size: 14px; margin-bottom: 10px; }
+            
+            .repo-meta { display: flex; flex-direction: column; gap: 8px; font-size: 13px; color: #586069; background: #fafbfc; padding: 12px; border-radius: 6px; }
+            .tech-stack { margin-bottom: 4px; }
+            .tag { display: inline-block; background-color: #f1f8ff; color: #0366d6; padding: 2px 8px; border-radius: 12px; font-size: 12px; margin-right: 4px; border: 1px solid #c8e1ff; }
+            .stars-info { color: #6a737d; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>🚀 GitHub Trending 每日推送</h1>
+                <p>2026-01-31 &bull; 14 个热门项目</p>
+            </div>
+            
+            
+        <div class="summary-card">
+            <h2>✨ 今日重点推荐</h2>
+            <p>【演示模式】今日 GitHub Trending 呈现出 AI 垂直应用爆发的趋势。榜单前列的项目多集中在 AI Agent 开发工具与大模型微调框架上，显示出开发者正从单纯关注模型能力转向关注应用落地。Go 语言在基础设施领域的地位依然稳固，而 Python 则继续主导 AI 生态。建议重点关注前三名的项目，它们代表了当前开源社区最活跃的技术方向。（注：此为无 API Key 时的演示文本，配置 Key 后将显示真实 AI 分析）</p>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <strong>14</strong>
+                    <span>项目总数</span>
+                </div>
+                <div class="stat-item">
+                    <strong>8.2</strong>
+                    <span>平均推荐分</span>
+                </div>
+                <div class="stat-item">
+                    <strong>7</strong>
+                    <span>语言种类</span>
+                </div>
+            </div>
+        </div>
+        
+            
+        <div class="lang-section">
+            <h3>📊 语言分布</h3>
+            <p><strong>TypeScript</strong>: Web, Web, Web, Web</p><p><strong>JavaScript</strong>: Web, Web, Web</p><p><strong>Python</strong>: AI/LLM, AI/LLM, AI/LLM</p><p><strong>Go</strong>: DevOps</p><p><strong>C++</strong>: Web</p><p><strong>Java</strong>: Web</p><p><strong>Unknown</strong>: Web</p>
+        </div>
+        
+            
+            <div class="projects-list">
+                
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#1</span>
+                <a href="https://github.com/openclaw/openclaw" class="repo-name">openclaw/openclaw</a>
+            </div>
+            <p class="repo-desc">一个全平台的个人 AI 助手，支持任何操作系统，采用独特的龙虾风格设计。</p>
+            <div class="recommend-badge">🔥 高推荐 (9/10)</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">TypeScript</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 125,045</span> &bull; <span>14,228 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#2</span>
+                <a href="https://github.com/asgeirtj/system_prompts_leaks" class="repo-name">asgeirtj/system_prompts_leaks</a>
+            </div>
+            <p class="repo-desc">收集了来自 ChatGPT、Claude 和 Gemini 等流行聊天机器人的系统提示词（System Prompts）。</p>
+            <div class="recommend-badge">🔥 高推荐 (9/10)</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">JavaScript</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 28,802</span> &bull; <span>1,083 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#3</span>
+                <a href="https://github.com/MoonshotAI/kimi-cli" class="repo-name">MoonshotAI/kimi-cli</a>
+            </div>
+            <p class="repo-desc">Kimi Code 的命令行接口版本，旨在成为你的下一个 CLI 智能代理。</p>
+            <div class="recommend-badge">🔥 高推荐 (9/10)</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">Python</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 5,404</span> &bull; <span>377 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#4</span>
+                <a href="https://github.com/modelcontextprotocol/ext-apps" class="repo-name">modelcontextprotocol/ext-apps</a>
+            </div>
+            <p class="repo-desc">MCP 应用协议的官方规范与 SDK 仓库，定义了嵌入式 AI 聊天机器人的标准。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">TypeScript</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 1,089</span> &bull; <span>195 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#5</span>
+                <a href="https://github.com/NevaMind-AI/memU" class="repo-name">NevaMind-AI/memU</a>
+            </div>
+            <p class="repo-desc">专为 openclaw 等 24/7 主动代理设计的记忆系统。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">Python</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 6,594</span> &bull; <span>465 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#6</span>
+                <a href="https://github.com/hashicorp/vault" class="repo-name">hashicorp/vault</a>
+            </div>
+            <p class="repo-desc">HashiCorp 推出的机密管理工具，提供加密即服务和特权访问管理功能。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">Go</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 34,871</span> &bull; <span>227 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#7</span>
+                <a href="https://github.com/badlogic/pi-mono" class="repo-name">badlogic/pi-mono</a>
+            </div>
+            <p class="repo-desc">这是一个基于 TypeScript 的热门开源项目。在真实模式下，AI 会自动将项目的英文简介翻译为准确、流畅的中文，帮助您快速了解其核心功能与技术特点。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">TypeScript</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 3,839</span> &bull; <span>285 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#8</span>
+                <a href="https://github.com/anomalyco/opencode-anthropic-auth" class="repo-name">anomalyco/opencode-anthropic-auth</a>
+            </div>
+            <p class="repo-desc">这是一个基于 JavaScript 的热门开源项目。在真实模式下，AI 会自动将项目的英文简介翻译为准确、流畅的中文，帮助您快速了解其核心功能与技术特点。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">JavaScript</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 383</span> &bull; <span>79 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#9</span>
+                <a href="https://github.com/protocolbuffers/protobuf" class="repo-name">protocolbuffers/protobuf</a>
+            </div>
+            <p class="repo-desc">Google 的数据交换格式（Protocol Buffers），一种轻量级、高效的结构化数据存储格式。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">C++</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 70,594</span> &bull; <span>66 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#10</span>
+                <a href="https://github.com/pedroslopez/whatsapp-web.js" class="repo-name">pedroslopez/whatsapp-web.js</a>
+            </div>
+            <p class="repo-desc">一个用于 Node.js 的 WhatsApp 客户端库，通过连接 WhatsApp Web 浏览器应用实现功能。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">JavaScript</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 20,904</span> &bull; <span>113 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#11</span>
+                <a href="https://github.com/TeamNewPipe/NewPipe" class="repo-name">TeamNewPipe/NewPipe</a>
+            </div>
+            <p class="repo-desc">这是一个基于 Java 的热门开源项目。在真实模式下，AI 会自动将项目的英文简介翻译为准确、流畅的中文，帮助您快速了解其核心功能与技术特点。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">Java</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 36,907</span> &bull; <span>122 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#12</span>
+                <a href="https://github.com/Shubhamsaboo/awesome-llm-apps" class="repo-name">Shubhamsaboo/awesome-llm-apps</a>
+            </div>
+            <p class="repo-desc">这是一个基于 Python 的热门开源项目。在真实模式下，AI 会自动将项目的英文简介翻译为准确、流畅的中文，帮助您快速了解其核心功能与技术特点。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">Python</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 91,334</span> &bull; <span>365 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#13</span>
+                <a href="https://github.com/microsoft/playwright-cli" class="repo-name">microsoft/playwright-cli</a>
+            </div>
+            <p class="repo-desc">这是一个基于 Unknown 的热门开源项目。在真实模式下，AI 会自动将项目的英文简介翻译为准确、流畅的中文，帮助您快速了解其核心功能与技术特点。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">Unknown</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 1,996</span> &bull; <span>207 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="repo">
+            <div class="repo-header">
+                <span class="rank">#14</span>
+                <a href="https://github.com/lobehub/lobehub" class="repo-name">lobehub/lobehub</a>
+            </div>
+            <p class="repo-desc">这是一个基于 TypeScript 的热门开源项目。在真实模式下，AI 会自动将项目的英文简介翻译为准确、流畅的中文，帮助您快速了解其核心功能与技术特点。</p>
+            <div class="score-text">推荐分: 7/10</div>
+            <div class="repo-meta">
+                <div class="tech-stack">
+                    <strong>主要技术栈:</strong> <span class="tag">TypeScript</span><span class="tag">Open Source</span><span class="tag">Hot</span>
+                </div>
+                <div class="stars-info">
+                    <span>⭐ 71,667</span> &bull; <span>376 stars today</span>
+                </div>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+    </body>
+    </html>
+    
